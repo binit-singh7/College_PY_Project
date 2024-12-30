@@ -62,6 +62,7 @@ def calculate_grade():
     print("\nResults:")
     print("-"*40)
     print(f"|{'Subject':<20} | {'marks':>8}|")
+    print("-"*40)
     for i in range(n):
         print(f"|{subjects[i]:<20} |{marks[i]:>8} |")
     print("-"*40)    
@@ -71,7 +72,7 @@ def calculate_grade():
 
     #For Dispalying Grade Comments
     print("-"*40)
-    print("\nGrade Breakdown:")
+    print("Remark :")
     if grade == "A+":
         print("Excellent performance! You scored above 90%.")
     elif grade == "A":
