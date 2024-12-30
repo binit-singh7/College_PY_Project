@@ -30,7 +30,7 @@ def calculate_grade():
     subjects = []
     marks = []
     total_marks = 0
-    n=int(input("Enter the number of students: "))
+    n=int(input("Enter the number of subjects: "))
 
     # Input subject names and marks
     for i in range(n):
