@@ -10,7 +10,22 @@
 # 3. For deposit, add the entered amount to the balance.
 # 4. For withdrawal, ensure the entered amount is less than or equal to the balance.
 # 5. Loop the program until the user chooses to exit.
+import datetime
 
+def verification():
+    pin=1234
+    while True:
+        try:
+            user_pin=int(input("Enter your pin: "))
+            if user_pin==pin:
+                print("Welcome to ATM\n")
+                break
+            else:
+                print("Invalid pin. Please try again.")
+                raise ValueError
+        except ValueError:
+            print("Invalid input. Please enter a valid pin.")
+verification()        
 def main():
     balance = 10000
     while True:
@@ -48,4 +63,5 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
-main()            
+main()  
+print("\nThank you for using ATM.")         
