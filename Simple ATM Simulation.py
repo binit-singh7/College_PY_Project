@@ -27,12 +27,22 @@ def main():
             balance += amount
             print(f"Deposit successful. Your new balance is: {balance}")
         elif choice == "3":
-            amount = int(input("Enter the amount to withdraw: "))
-            if amount <= balance:
-                balance -= amount
-                print(f"Withdrawal successful. Your new balance is: {balance}")
-            else:
-                print("Insufficient balance.")
+            while True:
+                try:
+                    user_input = input("Enter the amount to withdraw: (Or type 'cancel' to return to menu) : ")
+                    if user_input.lower() == "cancel":
+                        break
+                    else:
+                        amount = int(user_input)
+                    if amount < 0 or amount > balance:
+                        print("Invalid amount. Please try again.")
+                        raise ValueError
+                    else:
+                        balance -= amount
+                        print(f"Withdrawal successful. Your new balance is: {balance}")
+                        break
+                except ValueError:
+                    print("Invalid input. Please enter a valid amount.")         
         elif choice == "4":
             print("Exiting program.")
             break
