@@ -10,7 +10,6 @@
 # 3. For deposit, add the entered amount to the balance.
 # 4. For withdrawal, ensure the entered amount is less than or equal to the balance.
 # 5. Loop the program until the user chooses to exit.
-import datetime
 
 def verification():
     pin=1234
