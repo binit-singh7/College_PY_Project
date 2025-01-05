@@ -14,3 +14,8 @@ This is a Python-based simulation of a basic ATM system. The program allows user
 3. Number guessing game:
 
 The Number Guessing Game is a simple command-line Python program where the user tries to guess a randomly generated number between 1 and 100. With limited attempts, the game provides feedback to help the user refine their guesses. The program is designed to be interactive and beginner-friendly.
+
+4. Basic Library Management System:
+
+
+This system is designed to manage book borrowing in a library. Users can view available books, borrow books, and return books. The system ensures that books are borrowed and returned only by authorized users. Unauthorized users cannot access the library system.
