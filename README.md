@@ -19,3 +19,7 @@ The Number Guessing Game is a simple command-line Python program where the user 
 
 
 This system is designed to manage book borrowing in a library. Users can view available books, borrow books, and return books. The system ensures that books are borrowed and returned only by authorized users. Unauthorized users cannot access the library system.
+
+5. Rock, Paper, Scissors Game:
+
+This is a simple Python-based implementation of the classic **Rock, Paper, Scissors** game. Players can play multiple rounds against the computer, and the program tracks the scores until the user decides to exit.
