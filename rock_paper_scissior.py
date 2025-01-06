@@ -26,7 +26,7 @@ print("Game Over!")
 
 def condition(user_count,computer_count):
     while True:
-        print("\nChoose your move:")
+        print("Choose your move:")
         print("\n1. Rock")
         print("2. Paper")
         print("3. Scissors")
@@ -38,21 +38,23 @@ def condition(user_count,computer_count):
                 break
             if user_choice in [1,2,3]:
                 computer_choice=random.randint(1,3)
+                choices = {1: "Rock", 2: "Paper", 3: "Scissors"}
+                print(f"\nuser choice: {choices[user_choice]}- computer choice: {choices[computer_choice]}")
                 if user_choice==computer_choice:
-                    print("It's a tie!")
+                    print("\nIt's a tie!")
                 elif (user_choice==1 and computer_choice==3)or\
                     (user_choice==2 and computer_choice==1)or\
                     (user_choice==3 and computer_choice==2):
-                    print("You win this round!")
+                    print("\nYou win this round!")
                     user_count+=1    
                 else:
-                    print("You lose this round!")
+                    print("\nYou lose this round!")
                     computer_count+=1
                 print(f"current score: User {user_count} - Computer {computer_count}")
             else:
-                print("Invalid choice. Please try again.")
+                print("\nInvalid choice. Please try again.")
         except ValueError:
-            print("Invalid input. Please enter a numeric choice.")
+            print("\nInvalid input. Please enter a numeric choice.")
     return user_count,computer_count    
 def count(user_count,computer_count):
     print(f"Score: User {user_count} - Computer {computer_count}")
