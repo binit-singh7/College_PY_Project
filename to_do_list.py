@@ -74,7 +74,7 @@ class ToDoList:
                 else:
                     print("Invalid choice. Please choose a valid option.")
             except ValueError:
-                print("Invalid input. Please enter a number.")
+                print("Invalid input. Please enter a choice.")
 
 if __name__ == "__main__":
     todo_list = ToDoList()
