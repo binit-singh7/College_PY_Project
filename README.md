@@ -24,22 +24,22 @@ This system is designed to manage book borrowing in a library. Users can view av
 
 This is a simple Python-based implementation of the classic **Rock, Paper, Scissors** game. Players can play multiple rounds against the computer, and the program tracks the scores until the user decides to exit.
 
-6.Calculator 
+6.Calculator:
 
 This is a Python-based simple calculator application that provides basic arithmetic operations including addition, subtraction, multiplication, and division. The program is interactive and uses a menu-driven approach to handle user input.
 
-7.Unit Converter 
+7.Unit Converter: 
 
 This is a Python-based unit converter application that performs conversions between different units of measurement, including distance and temperature. The program provides an interactive menu for users to select and perform conversions easily.
 
-8.Currency Converter 
+8.Currency Converter: 
 
 This Python application allows users to convert amounts between various currencies using predefined exchange rates. The program features an interactive console interface for selecting source and target currencies and entering the amount to convert.
 
-9.To-Do List 
+9.To-Do List:
 
 This Python application is a simple, interactive command-line tool for managing a to-do list. Users can add, view, delete, and mark tasks as complete. The program uses a menu-driven approach to allow easy navigation and interaction.
 
-10.Hangman Game
+10.Hangman Game:
 
 This Python program implements a simple command-line Hangman game. Players guess letters to figure out a randomly chosen programming-related word within a limited number of tries.
