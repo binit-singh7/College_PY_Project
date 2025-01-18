@@ -8,30 +8,24 @@ class UnitConverter:
         }
 
     def km_to_miles(self, km):
-        """Convert kilometers to miles"""
         return km * 0.621371
 
     def miles_to_km(self, miles):
-        """Convert miles to kilometers"""
         return miles / 0.621371
 
     def celsius_to_fahrenheit(self, celsius):
-        """Convert Celsius to Fahrenheit"""
         return (celsius * 9/5) + 32
 
     def fahrenheit_to_celsius(self, fahrenheit):
-        """Convert Fahrenheit to Celsius"""
         return (fahrenheit - 32) * 5/9
 
     def convert(self, conversion_type, value):
-        """Perform the conversion"""
         if conversion_type in self.conversions:
             return self.conversions[conversion_type](value)
         else:
             raise ValueError("Invalid conversion type")
 
     def display_menu(self):
-        """Display the conversion menu"""
         print("\nUnit Converter Menu:")
         print("1. Kilometers to Miles")
         print("2. Miles to Kilometers")
@@ -40,7 +34,6 @@ class UnitConverter:
         print("5. Quit")
 
     def run(self):
-        """Run the unit converter"""
         while True:
             self.display_menu()
             choice = input("Enter your choice (1/2/3/4/5): ")
